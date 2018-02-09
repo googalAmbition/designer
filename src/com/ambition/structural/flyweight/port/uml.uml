@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_m9_qIAuxEeijlupJGjMr5A">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_m_AWwAuxEeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_m_F2UAuxEeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_m-ARMAuxEeijlupJGjMr5A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_m-ARMQuxEeijlupJGjMr5A" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_m-ARMguxEeijlupJGjMr5A" name="structural">
+        <packagedElement xmi:type="uml:Package" xmi:id="_m-ARMwuxEeijlupJGjMr5A" name="flyweight">
+          <packagedElement xmi:type="uml:Package" xmi:id="_m-A4QAuxEeijlupJGjMr5A" name="port">
+            <packagedElement xmi:type="uml:Class" xmi:id="_m-A4QQuxEeijlupJGjMr5A" name="Client" clientDependency="_2TvsIAuxEeijlupJGjMr5A">
+              <ownedOperation xmi:id="_m_AWwQuxEeijlupJGjMr5A" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_m_AWwguxEeijlupJGjMr5A" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m_AWwwuxEeijlupJGjMr5A" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m_AWxAuxEeijlupJGjMr5A"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_m-BfUAuxEeijlupJGjMr5A" name="Switch" clientDependency="_m_A90AuxEeijlupJGjMr5A">
+              <ownedAttribute xmi:id="_m_CL8AuxEeijlupJGjMr5A" name="type" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_m_A90AuxEeijlupJGjMr5A" name="NetworkDevice" supplier="_m-CGYAuxEeijlupJGjMr5A" client="_m-BfUAuxEeijlupJGjMr5A" contract="_m-CGYAuxEeijlupJGjMr5A"/>
+              <ownedOperation xmi:id="_m_CzAAuxEeijlupJGjMr5A" name="getType" visibility="public">
+                <ownedParameter xmi:id="_m_CzAQuxEeijlupJGjMr5A" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m_DaEAuxEeijlupJGjMr5A" name="use" visibility="public">
+                <ownedParameter xmi:id="_m_DaEQuxEeijlupJGjMr5A" name="port" type="_m-DUgQuxEeijlupJGjMr5A"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_m-CGYAuxEeijlupJGjMr5A" name="NetworkDevice" clientDependency="_sUmicAuxEeijlupJGjMr5A">
+              <ownedOperation xmi:id="_m_EoMAuxEeijlupJGjMr5A" name="getType" visibility="public">
+                <ownedParameter xmi:id="_m_EoMQuxEeijlupJGjMr5A" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m_EoMguxEeijlupJGjMr5A" name="use" visibility="public">
+                <ownedParameter xmi:id="_m_EoMwuxEeijlupJGjMr5A" name="port" type="_m-DUgQuxEeijlupJGjMr5A"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_m-CtcAuxEeijlupJGjMr5A" name="DeviceFactory">
+              <ownedAttribute xmi:id="_m_FPQAuxEeijlupJGjMr5A" name="devices" visibility="private" type="_m_EoNAuxEeijlupJGjMr5A"/>
+              <ownedAttribute xmi:id="_m_F2UQuxEeijlupJGjMr5A" name="totalTerminal" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_m_F2UguxEeijlupJGjMr5A"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_m_GdYAuxEeijlupJGjMr5A" name="getNetworkDevice" visibility="public">
+                <ownedParameter xmi:id="_m_GdYQuxEeijlupJGjMr5A" name="type">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_m_GdYguxEeijlupJGjMr5A" name="return" type="_m-CGYAuxEeijlupJGjMr5A" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m_HEcAuxEeijlupJGjMr5A" name="getTotalDevice" visibility="public">
+                <ownedParameter xmi:id="_m_HEcQuxEeijlupJGjMr5A" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m_HrgAuxEeijlupJGjMr5A" name="getTotalTerminal" visibility="public">
+                <ownedParameter xmi:id="_m_HrgQuxEeijlupJGjMr5A" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_m-DUgAuxEeijlupJGjMr5A" name="Hub" clientDependency="_m_HrgguxEeijlupJGjMr5A">
+              <ownedAttribute xmi:id="_m_I5oAuxEeijlupJGjMr5A" name="type" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <interfaceRealization xmi:id="_m_HrgguxEeijlupJGjMr5A" name="NetworkDevice" supplier="_m-CGYAuxEeijlupJGjMr5A" client="_m-DUgAuxEeijlupJGjMr5A" contract="_m-CGYAuxEeijlupJGjMr5A"/>
+              <ownedOperation xmi:id="_m_JgsAuxEeijlupJGjMr5A" name="getType" visibility="public">
+                <ownedParameter xmi:id="_m_JgsQuxEeijlupJGjMr5A" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m_KHwAuxEeijlupJGjMr5A" name="use" visibility="public">
+                <ownedParameter xmi:id="_m_KHwQuxEeijlupJGjMr5A" name="port" type="_m-DUgQuxEeijlupJGjMr5A"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_m-DUgQuxEeijlupJGjMr5A" name="Port">
+              <ownedAttribute xmi:id="_m_Ku0AuxEeijlupJGjMr5A" name="port" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_m_LV4AuxEeijlupJGjMr5A" name="getPort" visibility="public">
+                <ownedParameter xmi:id="_m_LV4QuxEeijlupJGjMr5A" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_m_LV4guxEeijlupJGjMr5A" name="setPort" visibility="public">
+                <ownedParameter xmi:id="_m_LV4wuxEeijlupJGjMr5A" name="port">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_yC4T4AuxEeijlupJGjMr5A" name="A_&lt;deviceFactory>_&lt;networkDevice>" memberEnd="_yC4T4QuxEeijlupJGjMr5A _yC4T5AuxEeijlupJGjMr5A">
+              <ownedEnd xmi:id="_yC4T4QuxEeijlupJGjMr5A" name="deviceFactory" type="_m-CtcAuxEeijlupJGjMr5A" association="_yC4T4AuxEeijlupJGjMr5A">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yC4T4guxEeijlupJGjMr5A" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yC4T4wuxEeijlupJGjMr5A" value="1"/>
+              </ownedEnd>
+              <ownedEnd xmi:id="_yC4T5AuxEeijlupJGjMr5A" name="networkDevice" type="_m-CGYAuxEeijlupJGjMr5A" aggregation="shared" association="_yC4T4AuxEeijlupJGjMr5A">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yC4T5QuxEeijlupJGjMr5A" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yC4T5guxEeijlupJGjMr5A" value="1"/>
+              </ownedEnd>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_m-jDwAuxEeijlupJGjMr5A" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_m-jDwQuxEeijlupJGjMr5A" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_m-jDwguxEeijlupJGjMr5A" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_m-jDwwuxEeijlupJGjMr5A" name="List"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_m_EoNAuxEeijlupJGjMr5A" name="List&lt;NetworkDevice>"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_sUmicAuxEeijlupJGjMr5A" name="Dependency1" supplier="_m-DUgQuxEeijlupJGjMr5A" client="_m-CGYAuxEeijlupJGjMr5A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_2TvsIAuxEeijlupJGjMr5A" name="Dependency2" supplier="_m-CtcAuxEeijlupJGjMr5A" client="_m-A4QQuxEeijlupJGjMr5A"/>
+</uml:Model>

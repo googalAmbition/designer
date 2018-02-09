@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Gw7s0ArtEeiD0rFshnpKMQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_GzdcYArtEeiD0rFshnpKMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Gw_XMArtEeiD0rFshnpKMQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_GxBzcArtEeiD0rFshnpKMQ" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_GxBzcQrtEeiD0rFshnpKMQ" name="structural">
+        <packagedElement xmi:type="uml:Package" xmi:id="_GxCagArtEeiD0rFshnpKMQ" name="bridge">
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxDBkArtEeiD0rFshnpKMQ" name="BigPen">
+            <generalization xmi:id="_GyqyMArtEeiD0rFshnpKMQ" general="_GxefYQrtEeiD0rFshnpKMQ"/>
+            <ownedOperation xmi:id="_GzeqgArtEeiD0rFshnpKMQ" name="draw" visibility="public">
+              <ownedParameter xmi:id="_GzeqgQrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxdRQArtEeiD0rFshnpKMQ" name="Green" clientDependency="_Gz3sEArtEeiD0rFshnpKMQ">
+            <ownedComment xmi:id="_GxefYArtEeiD0rFshnpKMQ">
+              <body>/** 
+ * @author ctc具体实现类
+ */
+</body>
+            </ownedComment>
+            <interfaceRealization xmi:id="_Gz3sEArtEeiD0rFshnpKMQ" name="Color" supplier="_Gxsh0ArtEeiD0rFshnpKMQ" client="_GxdRQArtEeiD0rFshnpKMQ" contract="_Gxsh0ArtEeiD0rFshnpKMQ"/>
+            <ownedOperation xmi:id="_Gz8kkArtEeiD0rFshnpKMQ" name="bepaint" visibility="public">
+              <ownedParameter xmi:id="_Gz8kkQrtEeiD0rFshnpKMQ" name="penType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_Gz8kkgrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxefYQrtEeiD0rFshnpKMQ" name="Pen" isAbstract="true">
+            <ownedAttribute xmi:id="_Gz9ysArtEeiD0rFshnpKMQ" name="color" visibility="protected" type="_Gxsh0ArtEeiD0rFshnpKMQ" association="_G0ldwArtEeiD0rFshnpKMQ"/>
+            <ownedOperation xmi:id="_Gz-ZwArtEeiD0rFshnpKMQ" name="setColor" visibility="public">
+              <ownedParameter xmi:id="_Gz-ZwQrtEeiD0rFshnpKMQ" name="color" type="_Gxsh0ArtEeiD0rFshnpKMQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Gz_A0ArtEeiD0rFshnpKMQ" name="draw" visibility="public" isAbstract="true">
+              <ownedParameter xmi:id="_Gz_A0QrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxfGcArtEeiD0rFshnpKMQ" name="Blue" clientDependency="_Gz_n4ArtEeiD0rFshnpKMQ">
+            <ownedComment xmi:id="_GxfGcQrtEeiD0rFshnpKMQ">
+              <body>/** 
+ * @author ctc具体实现类
+ */
+</body>
+            </ownedComment>
+            <interfaceRealization xmi:id="_Gz_n4ArtEeiD0rFshnpKMQ" name="Color" supplier="_Gxsh0ArtEeiD0rFshnpKMQ" client="_GxfGcArtEeiD0rFshnpKMQ" contract="_Gxsh0ArtEeiD0rFshnpKMQ"/>
+            <ownedOperation xmi:id="_Gz_n4QrtEeiD0rFshnpKMQ" name="bepaint" visibility="public">
+              <ownedParameter xmi:id="_G0AO8ArtEeiD0rFshnpKMQ" name="penType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_G0AO8QrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxftgArtEeiD0rFshnpKMQ" name="MiddlePen">
+            <generalization xmi:id="_G0AO8grtEeiD0rFshnpKMQ" general="_GxefYQrtEeiD0rFshnpKMQ"/>
+            <ownedOperation xmi:id="_G0A2AArtEeiD0rFshnpKMQ" name="draw" visibility="public">
+              <ownedParameter xmi:id="_G0A2AQrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxftgQrtEeiD0rFshnpKMQ" name="Red" clientDependency="_G0BdEArtEeiD0rFshnpKMQ">
+            <ownedComment xmi:id="_GxgUkArtEeiD0rFshnpKMQ">
+              <body>/** 
+ * @author ctc具体实现类
+ */
+</body>
+            </ownedComment>
+            <interfaceRealization xmi:id="_G0BdEArtEeiD0rFshnpKMQ" name="Color" supplier="_Gxsh0ArtEeiD0rFshnpKMQ" client="_GxftgQrtEeiD0rFshnpKMQ" contract="_Gxsh0ArtEeiD0rFshnpKMQ"/>
+            <ownedOperation xmi:id="_G0BdEQrtEeiD0rFshnpKMQ" name="bepaint" visibility="public">
+              <ownedParameter xmi:id="_G0BdEgrtEeiD0rFshnpKMQ" name="penType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_G0BdEwrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_GxgUkQrtEeiD0rFshnpKMQ" name="Client" clientDependency="_TJSwoArtEeiD0rFshnpKMQ _T1E4kArtEeiD0rFshnpKMQ">
+            <ownedOperation xmi:id="_G0CrMArtEeiD0rFshnpKMQ" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_G0CrMQrtEeiD0rFshnpKMQ" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G0CrMgrtEeiD0rFshnpKMQ" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G0CrMwrtEeiD0rFshnpKMQ"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Gxsh0ArtEeiD0rFshnpKMQ" name="Color">
+            <ownedComment xmi:id="_Gxsh0QrtEeiD0rFshnpKMQ">
+              <body>/** 
+ * @author ctc实现接口
+ */
+</body>
+            </ownedComment>
+            <ownedOperation xmi:id="_G0D5UArtEeiD0rFshnpKMQ" name="bepaint" visibility="public">
+              <ownedParameter xmi:id="_G0D5UQrtEeiD0rFshnpKMQ" name="penType">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_G0D5UgrtEeiD0rFshnpKMQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_G0ldwArtEeiD0rFshnpKMQ" memberEnd="_Gz9ysArtEeiD0rFshnpKMQ _G0ldwQrtEeiD0rFshnpKMQ">
+            <ownedEnd xmi:id="_G0ldwQrtEeiD0rFshnpKMQ" name="Pen" type="_GxefYQrtEeiD0rFshnpKMQ" association="_G0ldwArtEeiD0rFshnpKMQ"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_gJAvYArtEeiD0rFshnpKMQ" name="A_&lt;pen>_&lt;color>" memberEnd="_gJAvYQrtEeiD0rFshnpKMQ _gJAvZArtEeiD0rFshnpKMQ">
+            <ownedEnd xmi:id="_gJAvYQrtEeiD0rFshnpKMQ" name="pen" type="_GxefYQrtEeiD0rFshnpKMQ" association="_gJAvYArtEeiD0rFshnpKMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gJAvYgrtEeiD0rFshnpKMQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gJAvYwrtEeiD0rFshnpKMQ" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_gJAvZArtEeiD0rFshnpKMQ" name="color" type="_Gxsh0ArtEeiD0rFshnpKMQ" aggregation="shared" association="_gJAvYArtEeiD0rFshnpKMQ">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gJAvZQrtEeiD0rFshnpKMQ" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gJAvZgrtEeiD0rFshnpKMQ" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_TJSwoArtEeiD0rFshnpKMQ" name="Dependency1" supplier="_GxefYQrtEeiD0rFshnpKMQ" client="_GxgUkQrtEeiD0rFshnpKMQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_T1E4kArtEeiD0rFshnpKMQ" name="Dependency2" supplier="_Gxsh0ArtEeiD0rFshnpKMQ" client="_GxgUkQrtEeiD0rFshnpKMQ"/>
+</uml:Model>

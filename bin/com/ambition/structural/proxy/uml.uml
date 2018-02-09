@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_JgcqMAu1EeijlupJGjMr5A">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_JhSXsAu1EeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_JhXQMAu1EeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Jgd4UAu1EeijlupJGjMr5A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Jgd4UQu1EeijlupJGjMr5A" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Jgd4Ugu1EeijlupJGjMr5A" name="structural">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Jgd4Uwu1EeijlupJGjMr5A" name="proxy">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Jgd4VAu1EeijlupJGjMr5A" name="Client">
+            <ownedOperation xmi:id="_JhS-wAu1EeijlupJGjMr5A" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_JhS-wQu1EeijlupJGjMr5A" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JhS-wgu1EeijlupJGjMr5A" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JhS-wwu1EeijlupJGjMr5A"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_JgefYAu1EeijlupJGjMr5A" name="XMLUtil">
+            <ownedOperation xmi:id="_JhUM4Au1EeijlupJGjMr5A" name="getObject" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_JhUM4Qu1EeijlupJGjMr5A" name="return" type="_JhTl0Au1EeijlupJGjMr5A" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_JhUz8Au1EeijlupJGjMr5A" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_JhUz8Qu1EeijlupJGjMr5A" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JhUz8gu1EeijlupJGjMr5A" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JhUz8wu1EeijlupJGjMr5A"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_JgftgAu1EeijlupJGjMr5A" name="RealPermission" clientDependency="_JhVbAAu1EeijlupJGjMr5A">
+            <interfaceRealization xmi:id="_JhVbAAu1EeijlupJGjMr5A" name="AbstractPermission" supplier="_JggUkAu1EeijlupJGjMr5A" client="_JgftgAu1EeijlupJGjMr5A" contract="_JggUkAu1EeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_JhVbAQu1EeijlupJGjMr5A" name="modifyUserInfo" visibility="public"/>
+            <ownedOperation xmi:id="_JhWCEAu1EeijlupJGjMr5A" name="viewNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhWCEQu1EeijlupJGjMr5A" name="publisdNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhWpIAu1EeijlupJGjMr5A" name="modifyNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhXQMQu1EeijlupJGjMr5A" name="setLevel" visibility="public">
+              <ownedParameter xmi:id="_JhXQMgu1EeijlupJGjMr5A" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_JggUkAu1EeijlupJGjMr5A" name="AbstractPermission">
+            <ownedOperation xmi:id="_JhX3QAu1EeijlupJGjMr5A" name="modifyUserInfo" visibility="public"/>
+            <ownedOperation xmi:id="_JhX3QQu1EeijlupJGjMr5A" name="viewNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhX3Qgu1EeijlupJGjMr5A" name="publisdNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhX3Qwu1EeijlupJGjMr5A" name="modifyNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhX3RAu1EeijlupJGjMr5A" name="setLevel" visibility="public">
+              <ownedParameter xmi:id="_JhX3RQu1EeijlupJGjMr5A" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Jgg7oAu1EeijlupJGjMr5A" name="PermissionProxy" clientDependency="_JhX3Rgu1EeijlupJGjMr5A">
+            <ownedAttribute xmi:id="_JhYeUAu1EeijlupJGjMr5A" name="permission" visibility="private" type="_JgftgAu1EeijlupJGjMr5A" association="_JiXVwAu1EeijlupJGjMr5A"/>
+            <ownedAttribute xmi:id="_JhZFYAu1EeijlupJGjMr5A" name="level" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_JhZFYQu1EeijlupJGjMr5A"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_JhX3Rgu1EeijlupJGjMr5A" name="AbstractPermission" supplier="_JggUkAu1EeijlupJGjMr5A" client="_Jgg7oAu1EeijlupJGjMr5A" contract="_JggUkAu1EeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_JhaTgAu1EeijlupJGjMr5A" name="modifyUserInfo" visibility="public"/>
+            <ownedOperation xmi:id="_Jha6kAu1EeijlupJGjMr5A" name="viewNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhbhoAu1EeijlupJGjMr5A" name="publisdNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhbhoQu1EeijlupJGjMr5A" name="modifyNote" visibility="public"/>
+            <ownedOperation xmi:id="_JhcIsAu1EeijlupJGjMr5A" name="setLevel" visibility="public">
+              <ownedParameter xmi:id="_JhcIsQu1EeijlupJGjMr5A" name="level">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_JiXVwAu1EeijlupJGjMr5A" memberEnd="_JhYeUAu1EeijlupJGjMr5A _JiXVwQu1EeijlupJGjMr5A">
+            <ownedEnd xmi:id="_JiXVwQu1EeijlupJGjMr5A" name="PermissionProxy" type="_Jgg7oAu1EeijlupJGjMr5A" association="_JiXVwAu1EeijlupJGjMr5A"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JhBR8Au1EeijlupJGjMr5A" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JhBR8Qu1EeijlupJGjMr5A" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_JhBR8gu1EeijlupJGjMr5A" name="File"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JhBR8wu1EeijlupJGjMr5A" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JhBR9Au1EeijlupJGjMr5A" name="xml">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JhBR9Qu1EeijlupJGjMr5A" name="parsers">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JhBR9gu1EeijlupJGjMr5A" name="DocumentBuilder"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JhBR9wu1EeijlupJGjMr5A" name="DocumentBuilderFactory"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_JhBR-Au1EeijlupJGjMr5A" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_JhBR-Qu1EeijlupJGjMr5A" name="w3c">
+      <packagedElement xmi:type="uml:Package" xmi:id="_JhBR-gu1EeijlupJGjMr5A" name="dom">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JhBR-wu1EeijlupJGjMr5A" name="Document"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JhBR_Au1EeijlupJGjMr5A" name="Node"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_JhBR_Qu1EeijlupJGjMr5A" name="NodeList"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_JhTl0Au1EeijlupJGjMr5A" name="Object"/>
+</uml:Model>

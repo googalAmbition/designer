@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_546NgAsYEeiD0rFshnpKMQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_55uF0AsYEeiD0rFshnpKMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5460kAsYEeiD0rFshnpKMQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_5460kQsYEeiD0rFshnpKMQ" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_5460kgsYEeiD0rFshnpKMQ" name="structural">
+        <packagedElement xmi:type="uml:Package" xmi:id="_5460kwsYEeiD0rFshnpKMQ" name="decorator">
+          <packagedElement xmi:type="uml:Package" xmi:id="_547boAsYEeiD0rFshnpKMQ" name="psw">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_547boQsYEeiD0rFshnpKMQ" name="Cipher">
+              <ownedOperation xmi:id="_55uF0QsYEeiD0rFshnpKMQ" name="encript" visibility="public">
+                <ownedParameter xmi:id="_55uF0gsYEeiD0rFshnpKMQ" name="plainText">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_55uF0wsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_547bogsYEeiD0rFshnpKMQ" name="ComplexCipher">
+              <generalization xmi:id="_55uF1AsYEeiD0rFshnpKMQ" general="_548pwAsYEeiD0rFshnpKMQ"/>
+              <ownedOperation xmi:id="_55uF1QsYEeiD0rFshnpKMQ" name="encript" visibility="public">
+                <ownedParameter xmi:id="_55uF1gsYEeiD0rFshnpKMQ" name="plainText">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_55uF1wsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_55us4AsYEeiD0rFshnpKMQ" name="reverse" visibility="public">
+                <ownedParameter xmi:id="_55us4QsYEeiD0rFshnpKMQ" name="text">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_55us4gsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_548CsAsYEeiD0rFshnpKMQ" name="SimpleCipher" clientDependency="_55v7AAsYEeiD0rFshnpKMQ">
+              <interfaceRealization xmi:id="_55v7AAsYEeiD0rFshnpKMQ" name="Cipher" supplier="_547boQsYEeiD0rFshnpKMQ" client="_548CsAsYEeiD0rFshnpKMQ" contract="_547boQsYEeiD0rFshnpKMQ"/>
+              <ownedOperation xmi:id="_55v7AQsYEeiD0rFshnpKMQ" name="encript" visibility="public">
+                <ownedParameter xmi:id="_55v7AgsYEeiD0rFshnpKMQ" name="plainText">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_55v7AwsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_548pwAsYEeiD0rFshnpKMQ" name="CipherDecorator" clientDependency="_55wiEAsYEeiD0rFshnpKMQ">
+              <ownedAttribute xmi:id="_55xJIAsYEeiD0rFshnpKMQ" name="cipher" visibility="private" type="_547boQsYEeiD0rFshnpKMQ" association="_56oEwAsYEeiD0rFshnpKMQ"/>
+              <interfaceRealization xmi:id="_55wiEAsYEeiD0rFshnpKMQ" name="Cipher" supplier="_547boQsYEeiD0rFshnpKMQ" client="_548pwAsYEeiD0rFshnpKMQ" contract="_547boQsYEeiD0rFshnpKMQ"/>
+              <ownedOperation xmi:id="_55xJIQsYEeiD0rFshnpKMQ" name="encript" visibility="public">
+                <ownedParameter xmi:id="_55xJIgsYEeiD0rFshnpKMQ" name="plainText">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_55xJIwsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_549Q0AsYEeiD0rFshnpKMQ" name="Client" clientDependency="_VxI4oAsZEeiD0rFshnpKMQ">
+              <ownedOperation xmi:id="_55_LkAsYEeiD0rFshnpKMQ" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_55_LkQsYEeiD0rFshnpKMQ" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_55_LkgsYEeiD0rFshnpKMQ" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_55_LkwsYEeiD0rFshnpKMQ"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_55_yoAsYEeiD0rFshnpKMQ" name="demo1" visibility="private" isStatic="true"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_54934AsYEeiD0rFshnpKMQ" name="AdvanceCipher">
+              <generalization xmi:id="_56AZsAsYEeiD0rFshnpKMQ" general="_548pwAsYEeiD0rFshnpKMQ"/>
+              <ownedOperation xmi:id="_56AZsQsYEeiD0rFshnpKMQ" name="encript" visibility="public">
+                <ownedParameter xmi:id="_56AZsgsYEeiD0rFshnpKMQ" name="plainText">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_56AZswsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_56BAwAsYEeiD0rFshnpKMQ" name="mod" visibility="public">
+                <ownedParameter xmi:id="_56BAwQsYEeiD0rFshnpKMQ" name="text">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_56BAwgsYEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_56oEwAsYEeiD0rFshnpKMQ" memberEnd="_55xJIAsYEeiD0rFshnpKMQ _56oEwQsYEeiD0rFshnpKMQ">
+              <ownedEnd xmi:id="_56oEwQsYEeiD0rFshnpKMQ" name="CipherDecorator" type="_548pwAsYEeiD0rFshnpKMQ" association="_56oEwAsYEeiD0rFshnpKMQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_SOiUkAsZEeiD0rFshnpKMQ" name="A_&lt;cipherDecorator>_&lt;cipher>" memberEnd="_SOiUkQsZEeiD0rFshnpKMQ _SOiUlAsZEeiD0rFshnpKMQ">
+              <ownedEnd xmi:id="_SOiUkQsZEeiD0rFshnpKMQ" name="cipherDecorator" type="_548pwAsYEeiD0rFshnpKMQ" association="_SOiUkAsZEeiD0rFshnpKMQ">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SOiUkgsZEeiD0rFshnpKMQ" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SOiUkwsZEeiD0rFshnpKMQ" value="1"/>
+              </ownedEnd>
+              <ownedEnd xmi:id="_SOiUlAsZEeiD0rFshnpKMQ" name="cipher" type="_547boQsYEeiD0rFshnpKMQ" aggregation="shared" association="_SOiUkAsZEeiD0rFshnpKMQ">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SOiUlQsZEeiD0rFshnpKMQ" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SOiUlgsZEeiD0rFshnpKMQ" value="1"/>
+              </ownedEnd>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_VxI4oAsZEeiD0rFshnpKMQ" name="Dependency1" supplier="_547boQsYEeiD0rFshnpKMQ" client="_549Q0AsYEeiD0rFshnpKMQ"/>
+</uml:Model>

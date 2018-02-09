@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_xhp0IAvHEeijlupJGjMr5A">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_xi38IAvHEeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_xhp0IQvHEeijlupJGjMr5A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_xhp0IgvHEeijlupJGjMr5A" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_xhp0IwvHEeijlupJGjMr5A" name="behavioral">
+        <packagedElement xmi:type="uml:Package" xmi:id="_xhp0JAvHEeijlupJGjMr5A" name="command">
+          <packagedElement xmi:type="uml:Class" xmi:id="_xhp0JQvHEeijlupJGjMr5A" name="TVChangeCommand" clientDependency="_xiL_oAvHEeijlupJGjMr5A">
+            <ownedAttribute xmi:id="_xiMmsAvHEeijlupJGjMr5A" name="tv" visibility="private" type="_xhrpUAvHEeijlupJGjMr5A" association="_xjhcYAvHEeijlupJGjMr5A"/>
+            <interfaceRealization xmi:id="_xiL_oAvHEeijlupJGjMr5A" name="AbstractCommand" supplier="_xhsQYAvHEeijlupJGjMr5A" client="_xhp0JQvHEeijlupJGjMr5A" contract="_xhsQYAvHEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_xiNNwAvHEeijlupJGjMr5A" name="excute" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xhqbMAvHEeijlupJGjMr5A" name="Client">
+            <ownedOperation xmi:id="_xi4jMAvHEeijlupJGjMr5A" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_xi4jMQvHEeijlupJGjMr5A" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xi4jMgvHEeijlupJGjMr5A" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xi4jMwvHEeijlupJGjMr5A"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xhrCQAvHEeijlupJGjMr5A" name="TVOpenCommand" clientDependency="_xi5KQAvHEeijlupJGjMr5A">
+            <ownedAttribute xmi:id="_xi5xUAvHEeijlupJGjMr5A" name="tv" visibility="private" type="_xhrpUAvHEeijlupJGjMr5A" association="_xjhcYgvHEeijlupJGjMr5A"/>
+            <interfaceRealization xmi:id="_xi5KQAvHEeijlupJGjMr5A" name="AbstractCommand" supplier="_xhsQYAvHEeijlupJGjMr5A" client="_xhrCQAvHEeijlupJGjMr5A" contract="_xhsQYAvHEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_xi5xUQvHEeijlupJGjMr5A" name="excute" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xhrCQQvHEeijlupJGjMr5A" name="Controller">
+            <ownedAttribute xmi:id="_xi6_cAvHEeijlupJGjMr5A" name="open" visibility="private" type="_xhsQYAvHEeijlupJGjMr5A" association="_xjiDcAvHEeijlupJGjMr5A"/>
+            <ownedAttribute xmi:id="_xi6_cQvHEeijlupJGjMr5A" name="close" visibility="private" type="_xhsQYAvHEeijlupJGjMr5A" association="_xjiDcgvHEeijlupJGjMr5A"/>
+            <ownedAttribute xmi:id="_xi7mgAvHEeijlupJGjMr5A" name="change" visibility="private" type="_xhsQYAvHEeijlupJGjMr5A" association="_xjiDdAvHEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_xi8NkAvHEeijlupJGjMr5A" name="open" visibility="public"/>
+            <ownedOperation xmi:id="_xi80oAvHEeijlupJGjMr5A" name="close" visibility="public"/>
+            <ownedOperation xmi:id="_xi9bsAvHEeijlupJGjMr5A" name="change" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xhrpUAvHEeijlupJGjMr5A" name="Television">
+            <ownedOperation xmi:id="_xi-CwAvHEeijlupJGjMr5A" name="open" visibility="public"/>
+            <ownedOperation xmi:id="_xi-p0AvHEeijlupJGjMr5A" name="close" visibility="public"/>
+            <ownedOperation xmi:id="_xi-p0QvHEeijlupJGjMr5A" name="change" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xhrpUQvHEeijlupJGjMr5A" name="TVCloseCommand" clientDependency="_xi_Q4AvHEeijlupJGjMr5A">
+            <ownedAttribute xmi:id="_xi_Q4QvHEeijlupJGjMr5A" name="tv" visibility="private" type="_xhrpUAvHEeijlupJGjMr5A" association="_xjiDdgvHEeijlupJGjMr5A"/>
+            <interfaceRealization xmi:id="_xi_Q4AvHEeijlupJGjMr5A" name="AbstractCommand" supplier="_xhsQYAvHEeijlupJGjMr5A" client="_xhrpUQvHEeijlupJGjMr5A" contract="_xhsQYAvHEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_xi_Q4gvHEeijlupJGjMr5A" name="excute" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_xhsQYAvHEeijlupJGjMr5A" name="AbstractCommand">
+            <ownedOperation xmi:id="_xi_38AvHEeijlupJGjMr5A" name="excute" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_xjhcYAvHEeijlupJGjMr5A" memberEnd="_xiMmsAvHEeijlupJGjMr5A _xjhcYQvHEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_xjhcYQvHEeijlupJGjMr5A" name="TVChangeCommand" type="_xhp0JQvHEeijlupJGjMr5A" association="_xjhcYAvHEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_xjhcYgvHEeijlupJGjMr5A" memberEnd="_xi5xUAvHEeijlupJGjMr5A _xjhcYwvHEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_xjhcYwvHEeijlupJGjMr5A" name="TVOpenCommand" type="_xhrCQAvHEeijlupJGjMr5A" association="_xjhcYgvHEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_xjiDcAvHEeijlupJGjMr5A" memberEnd="_xi6_cAvHEeijlupJGjMr5A _xjiDcQvHEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_xjiDcQvHEeijlupJGjMr5A" name="Controller" type="_xhrCQQvHEeijlupJGjMr5A" association="_xjiDcAvHEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_xjiDcgvHEeijlupJGjMr5A" memberEnd="_xi6_cQvHEeijlupJGjMr5A _xjiDcwvHEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_xjiDcwvHEeijlupJGjMr5A" name="Controller" type="_xhrCQQvHEeijlupJGjMr5A" association="_xjiDcgvHEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_xjiDdAvHEeijlupJGjMr5A" memberEnd="_xi7mgAvHEeijlupJGjMr5A _xjiDdQvHEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_xjiDdQvHEeijlupJGjMr5A" name="Controller" type="_xhrCQQvHEeijlupJGjMr5A" association="_xjiDdAvHEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_xjiDdgvHEeijlupJGjMr5A" memberEnd="_xi_Q4QvHEeijlupJGjMr5A _xjiDdwvHEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_xjiDdwvHEeijlupJGjMr5A" name="TVCloseCommand" type="_xhrpUQvHEeijlupJGjMr5A" association="_xjiDdgvHEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_L6aQkAvIEeijlupJGjMr5A" name="A_&lt;controller>_&lt;abstractCommand>" memberEnd="_L6aQkQvIEeijlupJGjMr5A _L6aQlAvIEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_L6aQkQvIEeijlupJGjMr5A" name="controller" type="_xhrCQQvHEeijlupJGjMr5A" association="_L6aQkAvIEeijlupJGjMr5A">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L6aQkgvIEeijlupJGjMr5A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L6aQkwvIEeijlupJGjMr5A" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_L6aQlAvIEeijlupJGjMr5A" name="abstractCommand" type="_xhsQYAvHEeijlupJGjMr5A" aggregation="shared" association="_L6aQkAvIEeijlupJGjMr5A">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L6aQlQvIEeijlupJGjMr5A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L6aQlgvIEeijlupJGjMr5A" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

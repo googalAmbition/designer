@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Rk5osA09EeigxZkDBIUCPQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_RmaEkA09EeigxZkDBIUCPQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Rk6PwA09EeigxZkDBIUCPQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Rk6PwQ09EeigxZkDBIUCPQ" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rk6Pwg09EeigxZkDBIUCPQ" name="behavioral">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Rk6Pww09EeigxZkDBIUCPQ" name="state">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Rk620A09EeigxZkDBIUCPQ" name="extend">
+            <packagedElement xmi:type="uml:Class" xmi:id="_Rk620Q09EeigxZkDBIUCPQ" name="Client">
+              <ownedOperation xmi:id="_RmaroA09EeigxZkDBIUCPQ" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_RmaroQ09EeigxZkDBIUCPQ" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rmarog09EeigxZkDBIUCPQ" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rmarow09EeigxZkDBIUCPQ"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Rk7d4A09EeigxZkDBIUCPQ" name="OffState">
+              <generalization xmi:id="_RmbSsA09EeigxZkDBIUCPQ" general="_Rk8E8Q09EeigxZkDBIUCPQ"/>
+              <ownedOperation xmi:id="_Rmb5wA09EeigxZkDBIUCPQ" name="on" visibility="public">
+                <ownedParameter xmi:id="_Rmb5wQ09EeigxZkDBIUCPQ" name="s" type="_Rk8E8A09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Rmcg0A09EeigxZkDBIUCPQ" name="off" visibility="public">
+                <ownedParameter xmi:id="_Rmcg0Q09EeigxZkDBIUCPQ" name="s" type="_Rk8E8A09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Rk8E8A09EeigxZkDBIUCPQ" name="Switch">
+              <ownedAttribute xmi:id="_RmdH4A09EeigxZkDBIUCPQ" name="state" visibility="private" isStatic="true" type="_Rk8E8Q09EeigxZkDBIUCPQ" association="_RnRnQA09EeigxZkDBIUCPQ"/>
+              <ownedAttribute xmi:id="_RmeWAA09EeigxZkDBIUCPQ" name="onState" visibility="private" isStatic="true" type="_Rk8E8Q09EeigxZkDBIUCPQ" association="_RnRnQg09EeigxZkDBIUCPQ"/>
+              <ownedAttribute xmi:id="_RmfkIA09EeigxZkDBIUCPQ" name="offState" visibility="private" isStatic="true" type="_Rk8E8Q09EeigxZkDBIUCPQ" association="_RnRnRA09EeigxZkDBIUCPQ"/>
+              <ownedAttribute xmi:id="_RmgyQA09EeigxZkDBIUCPQ" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_RmhZUA09EeigxZkDBIUCPQ" name="setState" visibility="public">
+                <ownedParameter xmi:id="_RmhZUQ09EeigxZkDBIUCPQ" name="state" type="_Rk8E8Q09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_RmiAYA09EeigxZkDBIUCPQ" name="on" visibility="public"/>
+              <ownedOperation xmi:id="_RmincA09EeigxZkDBIUCPQ" name="off" visibility="public"/>
+              <ownedOperation xmi:id="_RmjOgA09EeigxZkDBIUCPQ" name="getState" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_RmjOgQ09EeigxZkDBIUCPQ" name="type">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_RmjOgg09EeigxZkDBIUCPQ" name="return" type="_Rk8E8Q09EeigxZkDBIUCPQ" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Rk8E8Q09EeigxZkDBIUCPQ" name="State" isAbstract="true">
+              <ownedOperation xmi:id="_Rmj1kA09EeigxZkDBIUCPQ" name="on" visibility="public" isAbstract="true">
+                <ownedParameter xmi:id="_Rmj1kQ09EeigxZkDBIUCPQ" name="s" type="_Rk8E8A09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_Rmj1kg09EeigxZkDBIUCPQ" name="off" visibility="public" isAbstract="true">
+                <ownedParameter xmi:id="_Rmj1kw09EeigxZkDBIUCPQ" name="s" type="_Rk8E8A09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_Rk8sAA09EeigxZkDBIUCPQ" name="OnState">
+              <generalization xmi:id="_RmkcoA09EeigxZkDBIUCPQ" general="_Rk8E8Q09EeigxZkDBIUCPQ"/>
+              <ownedOperation xmi:id="_RmkcoQ09EeigxZkDBIUCPQ" name="on" visibility="public">
+                <ownedParameter xmi:id="_Rmkcog09EeigxZkDBIUCPQ" name="s" type="_Rk8E8A09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_RmlDsA09EeigxZkDBIUCPQ" name="off" visibility="public">
+                <ownedParameter xmi:id="_RmlDsQ09EeigxZkDBIUCPQ" name="s" type="_Rk8E8A09EeigxZkDBIUCPQ"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_RnRnQA09EeigxZkDBIUCPQ" memberEnd="_RmdH4A09EeigxZkDBIUCPQ _RnRnQQ09EeigxZkDBIUCPQ">
+              <ownedEnd xmi:id="_RnRnQQ09EeigxZkDBIUCPQ" name="Switch" type="_Rk8E8A09EeigxZkDBIUCPQ" association="_RnRnQA09EeigxZkDBIUCPQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_RnRnQg09EeigxZkDBIUCPQ" memberEnd="_RmeWAA09EeigxZkDBIUCPQ _RnRnQw09EeigxZkDBIUCPQ">
+              <ownedEnd xmi:id="_RnRnQw09EeigxZkDBIUCPQ" name="Switch" type="_Rk8E8A09EeigxZkDBIUCPQ" association="_RnRnQg09EeigxZkDBIUCPQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_RnRnRA09EeigxZkDBIUCPQ" memberEnd="_RmfkIA09EeigxZkDBIUCPQ _RnRnRQ09EeigxZkDBIUCPQ">
+              <ownedEnd xmi:id="_RnRnRQ09EeigxZkDBIUCPQ" name="Switch" type="_Rk8E8A09EeigxZkDBIUCPQ" association="_RnRnRA09EeigxZkDBIUCPQ"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_BaNaoAo7EeizDPuXHxNI6A">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_BbSYsAo7EeizDPuXHxNI6A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_BaOBsAo7EeizDPuXHxNI6A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_BaOBsQo7EeizDPuXHxNI6A" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_BaOBsgo7EeizDPuXHxNI6A" name="abstractFactory">
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaOBswo7EeizDPuXHxNI6A" name="LeFactory" clientDependency="_Ba4JAAo7EeizDPuXHxNI6A _W39VoAo7EeizDPuXHxNI6A _Y5oScAo7EeizDPuXHxNI6A">
+          <interfaceRealization xmi:id="_Ba4JAAo7EeizDPuXHxNI6A" name="Factory" supplier="_BaPP0Ao7EeizDPuXHxNI6A" client="_BaOBswo7EeizDPuXHxNI6A" contract="_BaPP0Ao7EeizDPuXHxNI6A"/>
+          <ownedOperation xmi:id="_Ba4wEAo7EeizDPuXHxNI6A" name="productTV" visibility="public">
+            <ownedParameter xmi:id="_Ba4wEQo7EeizDPuXHxNI6A" name="return" type="_BaP24Ao7EeizDPuXHxNI6A" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ba4wEgo7EeizDPuXHxNI6A" name="productMovie" visibility="public">
+            <ownedParameter xmi:id="_Ba4wEwo7EeizDPuXHxNI6A" name="return" type="_BaQd8Ao7EeizDPuXHxNI6A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaOowAo7EeizDPuXHxNI6A" name="LeMovie" clientDependency="_Ba5XIAo7EeizDPuXHxNI6A">
+          <interfaceRealization xmi:id="_Ba5XIAo7EeizDPuXHxNI6A" name="Movie" supplier="_BaQd8Ao7EeizDPuXHxNI6A" client="_BaOowAo7EeizDPuXHxNI6A" contract="_BaQd8Ao7EeizDPuXHxNI6A"/>
+          <ownedOperation xmi:id="_Ba5XIQo7EeizDPuXHxNI6A" name="play" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_BaPP0Ao7EeizDPuXHxNI6A" name="Factory">
+          <ownedOperation xmi:id="_Ba5-MAo7EeizDPuXHxNI6A" name="productTV" visibility="public">
+            <ownedParameter xmi:id="_Ba5-MQo7EeizDPuXHxNI6A" name="return" type="_BaP24Ao7EeizDPuXHxNI6A" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ba5-Mgo7EeizDPuXHxNI6A" name="productMovie" visibility="public">
+            <ownedParameter xmi:id="_Ba5-Mwo7EeizDPuXHxNI6A" name="return" type="_BaQd8Ao7EeizDPuXHxNI6A" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_IkyK8Ao7EeizDPuXHxNI6A" name="Operation1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_BaP24Ao7EeizDPuXHxNI6A" name="TV">
+          <ownedOperation xmi:id="_Ba5-NAo7EeizDPuXHxNI6A" name="play" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_BaQd8Ao7EeizDPuXHxNI6A" name="Movie">
+          <ownedOperation xmi:id="_Ba5-NQo7EeizDPuXHxNI6A" name="play" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaQd8Qo7EeizDPuXHxNI6A" name="TCLFactory" clientDependency="_Ba5-Ngo7EeizDPuXHxNI6A _Tw1MoAo7EeizDPuXHxNI6A _Vf8Z0Ao7EeizDPuXHxNI6A">
+          <interfaceRealization xmi:id="_Ba5-Ngo7EeizDPuXHxNI6A" name="Factory" supplier="_BaPP0Ao7EeizDPuXHxNI6A" client="_BaQd8Qo7EeizDPuXHxNI6A" contract="_BaPP0Ao7EeizDPuXHxNI6A"/>
+          <ownedOperation xmi:id="_Ba5-Nwo7EeizDPuXHxNI6A" name="productTV" visibility="public">
+            <ownedParameter xmi:id="_Ba5-OAo7EeizDPuXHxNI6A" name="return" type="_BaP24Ao7EeizDPuXHxNI6A" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ba6lQAo7EeizDPuXHxNI6A" name="productMovie" visibility="public">
+            <ownedParameter xmi:id="_Ba6lQQo7EeizDPuXHxNI6A" name="return" type="_BaQd8Ao7EeizDPuXHxNI6A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaRFAAo7EeizDPuXHxNI6A" name="TCLTV" clientDependency="_Ba6lQgo7EeizDPuXHxNI6A">
+          <interfaceRealization xmi:id="_Ba6lQgo7EeizDPuXHxNI6A" name="TV" supplier="_BaP24Ao7EeizDPuXHxNI6A" client="_BaRFAAo7EeizDPuXHxNI6A" contract="_BaP24Ao7EeizDPuXHxNI6A"/>
+          <ownedOperation xmi:id="_Ba6lQwo7EeizDPuXHxNI6A" name="play" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaRFAQo7EeizDPuXHxNI6A" name="Client" clientDependency="_k0jMUAo7EeizDPuXHxNI6A _lbFA0Ao7EeizDPuXHxNI6A">
+          <ownedOperation xmi:id="_BbSYsQo7EeizDPuXHxNI6A" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_BbSYsgo7EeizDPuXHxNI6A" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BbSYswo7EeizDPuXHxNI6A" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BbSYtAo7EeizDPuXHxNI6A"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaRsEAo7EeizDPuXHxNI6A" name="LeTV" clientDependency="_BbSYtQo7EeizDPuXHxNI6A">
+          <interfaceRealization xmi:id="_BbSYtQo7EeizDPuXHxNI6A" name="TV" supplier="_BaP24Ao7EeizDPuXHxNI6A" client="_BaRsEAo7EeizDPuXHxNI6A" contract="_BaP24Ao7EeizDPuXHxNI6A"/>
+          <ownedOperation xmi:id="_BbS_wAo7EeizDPuXHxNI6A" name="play" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BaSTIAo7EeizDPuXHxNI6A" name="TCLMovie" clientDependency="_BbS_wQo7EeizDPuXHxNI6A">
+          <interfaceRealization xmi:id="_BbS_wQo7EeizDPuXHxNI6A" name="Movie" supplier="_BaQd8Ao7EeizDPuXHxNI6A" client="_BaSTIAo7EeizDPuXHxNI6A" contract="_BaQd8Ao7EeizDPuXHxNI6A"/>
+          <ownedOperation xmi:id="_BbTm0Ao7EeizDPuXHxNI6A" name="play" visibility="public"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Tw1MoAo7EeizDPuXHxNI6A" name="Dependency1" supplier="_BaRFAAo7EeizDPuXHxNI6A" client="_BaQd8Qo7EeizDPuXHxNI6A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Vf8Z0Ao7EeizDPuXHxNI6A" name="Dependency2" supplier="_BaSTIAo7EeizDPuXHxNI6A" client="_BaQd8Qo7EeizDPuXHxNI6A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_W39VoAo7EeizDPuXHxNI6A" name="Dependency3" supplier="_BaOowAo7EeizDPuXHxNI6A" client="_BaOBswo7EeizDPuXHxNI6A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Y5oScAo7EeizDPuXHxNI6A" name="Dependency4" supplier="_BaRsEAo7EeizDPuXHxNI6A" client="_BaOBswo7EeizDPuXHxNI6A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_k0jMUAo7EeizDPuXHxNI6A" name="Dependency5" supplier="_BaPP0Ao7EeizDPuXHxNI6A" client="_BaRFAQo7EeizDPuXHxNI6A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_lbFA0Ao7EeizDPuXHxNI6A" name="Dependency6" supplier="_BaP24Ao7EeizDPuXHxNI6A" client="_BaRFAQo7EeizDPuXHxNI6A"/>
+</uml:Model>

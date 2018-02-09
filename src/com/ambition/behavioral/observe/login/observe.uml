@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_knAcYAyoEeiqu7VK8Ye6tA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_kpZpEAyoEeiqu7VK8Ye6tA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_knBDcAyoEeiqu7VK8Ye6tA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_knBDcQyoEeiqu7VK8Ye6tA" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_knBDcgyoEeiqu7VK8Ye6tA" name="behavioral">
+        <packagedElement xmi:type="uml:Package" xmi:id="_knBDcwyoEeiqu7VK8Ye6tA" name="observe">
+          <packagedElement xmi:type="uml:Package" xmi:id="_knBDdAyoEeiqu7VK8Ye6tA" name="login">
+            <packagedElement xmi:type="uml:Class" xmi:id="_knBqgAyoEeiqu7VK8Ye6tA" name="Client"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_knBqgQyoEeiqu7VK8Ye6tA" name="LoginValidatorA" clientDependency="_koitcAyoEeiqu7VK8Ye6tA">
+              <generalization xmi:id="_koitcQyoEeiqu7VK8Ye6tA" general="_koEMVwyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kolJsAyoEeiqu7VK8Ye6tA" name="p" visibility="private" type="_koEzYAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kom-4AyoEeiqu7VK8Ye6tA" name="lb" visibility="private" type="_knC4oAyoEeiqu7VK8Ye6tA" association="_kquewAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_koo0EAyoEeiqu7VK8Ye6tA" name="lblLogo" visibility="private" type="_koEMWAyoEeiqu7VK8Ye6tA"/>
+              <interfaceRealization xmi:id="_koitcAyoEeiqu7VK8Ye6tA" name="LoginEventListener" supplier="_knCRkAyoEeiqu7VK8Ye6tA" client="_knBqgQyoEeiqu7VK8Ye6tA" contract="_knCRkAyoEeiqu7VK8Ye6tA"/>
+              <ownedOperation xmi:id="_koqCMAyoEeiqu7VK8Ye6tA" name="validateLogin" visibility="public">
+                <ownedParameter xmi:id="_kou6sAyoEeiqu7VK8Ye6tA" name="event" type="_knDfsAyoEeiqu7VK8Ye6tA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kpaQIAyoEeiqu7VK8Ye6tA" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_kpaQIQyoEeiqu7VK8Ye6tA" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kpaQIgyoEeiqu7VK8Ye6tA" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kpaQIwyoEeiqu7VK8Ye6tA"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_knCRkAyoEeiqu7VK8Ye6tA" name="LoginEventListener" clientDependency="_xq0Q8AyoEeiqu7VK8Ye6tA">
+              <generalization xmi:id="_kpbeQAyoEeiqu7VK8Ye6tA" general="_koEzYgyoEeiqu7VK8Ye6tA"/>
+              <ownedOperation xmi:id="_kpbeQQyoEeiqu7VK8Ye6tA" name="validateLogin" visibility="public">
+                <ownedParameter xmi:id="_kpbeQgyoEeiqu7VK8Ye6tA" name="event" type="_knDfsAyoEeiqu7VK8Ye6tA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_knC4oAyoEeiqu7VK8Ye6tA" name="LoginBean">
+              <generalization xmi:id="_kpbeQwyoEeiqu7VK8Ye6tA" general="_koEzYAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpcFUAyoEeiqu7VK8Ye6tA" name="labName" visibility="package" type="_koEMWAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpdTcAyoEeiqu7VK8Ye6tA" name="labPassword" visibility="package" type="_koEMWAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpfIoAyoEeiqu7VK8Ye6tA" name="txtName" visibility="package" type="_koFacQyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpgWwAyoEeiqu7VK8Ye6tA" name="txtPassword" visibility="package" type="_koFacAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpiL8AyoEeiqu7VK8Ye6tA" name="btnLogin" visibility="package" type="_koEzZgyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpjaEAyoEeiqu7VK8Ye6tA" name="btnClear" visibility="package" type="_koEzZgyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpkBIAyoEeiqu7VK8Ye6tA" name="lel" visibility="package" type="_knCRkAyoEeiqu7VK8Ye6tA" association="_kquewgyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kplPQAyoEeiqu7VK8Ye6tA" name="le" visibility="package" type="_knDfsAyoEeiqu7VK8Ye6tA" association="_kquexAyoEeiqu7VK8Ye6tA"/>
+              <ownedOperation xmi:id="_kpl2UAyoEeiqu7VK8Ye6tA" name="addLoginEventListener" visibility="public">
+                <ownedParameter xmi:id="_kpl2UQyoEeiqu7VK8Ye6tA" name="lel" type="_knCRkAyoEeiqu7VK8Ye6tA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kpnEcAyoEeiqu7VK8Ye6tA" name="fireLoginEvent" visibility="private">
+                <ownedParameter xmi:id="_kpnEcQyoEeiqu7VK8Ye6tA" name="object" type="_kpmdYAyoEeiqu7VK8Ye6tA"/>
+                <ownedParameter xmi:id="_kpnEcgyoEeiqu7VK8Ye6tA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_kpnEcwyoEeiqu7VK8Ye6tA" name="password">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kpnrgAyoEeiqu7VK8Ye6tA" name="actionPerformed" visibility="public">
+                <ownedParameter xmi:id="_kpnrgQyoEeiqu7VK8Ye6tA" name="e" type="_koEzZAyoEeiqu7VK8Ye6tA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_knDfsAyoEeiqu7VK8Ye6tA" name="LoginEvent">
+              <generalization xmi:id="_kpoSkAyoEeiqu7VK8Ye6tA" general="_koFacgyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpo5oAyoEeiqu7VK8Ye6tA" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_kpqHwAyoEeiqu7VK8Ye6tA" name="password" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_kpqu0AyoEeiqu7VK8Ye6tA" name="getName" visibility="public">
+                <ownedParameter xmi:id="_kpqu0QyoEeiqu7VK8Ye6tA" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kprV4AyoEeiqu7VK8Ye6tA" name="setName" visibility="public">
+                <ownedParameter xmi:id="_kprV4QyoEeiqu7VK8Ye6tA" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kpr88AyoEeiqu7VK8Ye6tA" name="getPassword" visibility="public">
+                <ownedParameter xmi:id="_kpr88QyoEeiqu7VK8Ye6tA" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kptLEAyoEeiqu7VK8Ye6tA" name="setPassword" visibility="public">
+                <ownedParameter xmi:id="_kptLEQyoEeiqu7VK8Ye6tA" name="password">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_knDfsQyoEeiqu7VK8Ye6tA" name="LoginValidatorB" clientDependency="_kptyIAyoEeiqu7VK8Ye6tA">
+              <generalization xmi:id="_kpuZMAyoEeiqu7VK8Ye6tA" general="_koEMVwyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpvAQAyoEeiqu7VK8Ye6tA" name="p" visibility="private" type="_koEzYAyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpw1cAyoEeiqu7VK8Ye6tA" name="lb" visibility="private" type="_knC4oAyoEeiqu7VK8Ye6tA" association="_kquexgyoEeiqu7VK8Ye6tA"/>
+              <ownedAttribute xmi:id="_kpyDkAyoEeiqu7VK8Ye6tA" name="lblLogo" visibility="private" type="_koEMWAyoEeiqu7VK8Ye6tA"/>
+              <interfaceRealization xmi:id="_kptyIAyoEeiqu7VK8Ye6tA" name="LoginEventListener" supplier="_knCRkAyoEeiqu7VK8Ye6tA" client="_knDfsQyoEeiqu7VK8Ye6tA" contract="_knCRkAyoEeiqu7VK8Ye6tA"/>
+              <ownedOperation xmi:id="_kpyqoAyoEeiqu7VK8Ye6tA" name="validateLogin" visibility="public">
+                <ownedParameter xmi:id="_kpyqoQyoEeiqu7VK8Ye6tA" name="event" type="_knDfsAyoEeiqu7VK8Ye6tA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kpz4wAyoEeiqu7VK8Ye6tA" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_kpz4wQyoEeiqu7VK8Ye6tA" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kpz4wgyoEeiqu7VK8Ye6tA" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kpz4wwyoEeiqu7VK8Ye6tA"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_kquewAyoEeiqu7VK8Ye6tA" memberEnd="_kom-4AyoEeiqu7VK8Ye6tA _kquewQyoEeiqu7VK8Ye6tA">
+              <ownedEnd xmi:id="_kquewQyoEeiqu7VK8Ye6tA" name="LoginValidatorA" type="_knBqgQyoEeiqu7VK8Ye6tA" association="_kquewAyoEeiqu7VK8Ye6tA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_kquewgyoEeiqu7VK8Ye6tA" memberEnd="_kpkBIAyoEeiqu7VK8Ye6tA _kquewwyoEeiqu7VK8Ye6tA">
+              <ownedEnd xmi:id="_kquewwyoEeiqu7VK8Ye6tA" name="LoginBean" type="_knC4oAyoEeiqu7VK8Ye6tA" association="_kquewgyoEeiqu7VK8Ye6tA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_kquexAyoEeiqu7VK8Ye6tA" memberEnd="_kplPQAyoEeiqu7VK8Ye6tA _kquexQyoEeiqu7VK8Ye6tA">
+              <ownedEnd xmi:id="_kquexQyoEeiqu7VK8Ye6tA" name="LoginBean" type="_knC4oAyoEeiqu7VK8Ye6tA" association="_kquexAyoEeiqu7VK8Ye6tA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_kquexgyoEeiqu7VK8Ye6tA" memberEnd="_kpw1cAyoEeiqu7VK8Ye6tA _kquexwyoEeiqu7VK8Ye6tA">
+              <ownedEnd xmi:id="_kquexwyoEeiqu7VK8Ye6tA" name="LoginValidatorB" type="_knDfsQyoEeiqu7VK8Ye6tA" association="_kquexgyoEeiqu7VK8Ye6tA"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_koEMUAyoEeiqu7VK8Ye6tA" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_koEMUQyoEeiqu7VK8Ye6tA" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEMUgyoEeiqu7VK8Ye6tA" name="Color"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEMUwyoEeiqu7VK8Ye6tA" name="Font"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEMVAyoEeiqu7VK8Ye6tA" name="GridLayout"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_koEzYwyoEeiqu7VK8Ye6tA" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_koEzZAyoEeiqu7VK8Ye6tA" name="ActionEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_koEzZQyoEeiqu7VK8Ye6tA" name="ActionListener"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_koEzYQyoEeiqu7VK8Ye6tA" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEzYgyoEeiqu7VK8Ye6tA" name="EventListener"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koFacgyoEeiqu7VK8Ye6tA" name="EventObject"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_koEMVQyoEeiqu7VK8Ye6tA" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_koEMVgyoEeiqu7VK8Ye6tA" name="swing">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEMVwyoEeiqu7VK8Ye6tA" name="JFrame"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEMWAyoEeiqu7VK8Ye6tA" name="JLabel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEMWQyoEeiqu7VK8Ye6tA" name="JOptionPane"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEzYAyoEeiqu7VK8Ye6tA" name="JPanel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koEzZgyoEeiqu7VK8Ye6tA" name="JButton"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koFacAyoEeiqu7VK8Ye6tA" name="JPasswordField"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_koFacQyoEeiqu7VK8Ye6tA" name="JTextField"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_kpmdYAyoEeiqu7VK8Ye6tA" name="Object"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_xq0Q8AyoEeiqu7VK8Ye6tA" name="Dependency1" supplier="_knDfsAyoEeiqu7VK8Ye6tA" client="_knCRkAyoEeiqu7VK8Ye6tA"/>
+</uml:Model>

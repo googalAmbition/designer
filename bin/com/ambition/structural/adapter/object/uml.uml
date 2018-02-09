@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_8-YiwAruEeiD0rFshnpKMQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_8_FGUAruEeiD0rFshnpKMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_8_HikAruEeiD0rFshnpKMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8-YiwQruEeiD0rFshnpKMQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_8-ZJ0AruEeiD0rFshnpKMQ" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_8-ZJ0QruEeiD0rFshnpKMQ" name="structural">
+        <packagedElement xmi:type="uml:Package" xmi:id="_8-ZJ0gruEeiD0rFshnpKMQ" name="adapter">
+          <packagedElement xmi:type="uml:Package" xmi:id="_8-ZJ0wruEeiD0rFshnpKMQ" name="object">
+            <packagedElement xmi:type="uml:Class" xmi:id="_8-ZJ1AruEeiD0rFshnpKMQ" name="CipherAdapter">
+              <ownedComment xmi:id="_8-aX8AruEeiD0rFshnpKMQ">
+                <body>/** 
+ * @author ctc适配器类，加密适配器
+ */
+</body>
+              </ownedComment>
+              <generalization xmi:id="_8-5gIAruEeiD0rFshnpKMQ" general="_8-aX8QruEeiD0rFshnpKMQ"/>
+              <ownedAttribute xmi:id="_8-6HMAruEeiD0rFshnpKMQ" name="caesar" visibility="private" type="_8-cNIAruEeiD0rFshnpKMQ" association="_8_9QEAruEeiD0rFshnpKMQ"/>
+              <ownedOperation xmi:id="_8_HikQruEeiD0rFshnpKMQ" name="doEncrypt" visibility="public">
+                <ownedParameter xmi:id="_8_HikgruEeiD0rFshnpKMQ" name="key">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_8_HikwruEeiD0rFshnpKMQ" name="ps">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_8_HilAruEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_8-aX8QruEeiD0rFshnpKMQ" name="DataOperation" isAbstract="true">
+              <ownedComment xmi:id="_8-a_AAruEeiD0rFshnpKMQ">
+                <body>/** 
+ * @author ctc目标抽象类，数据操作
+ */
+</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_8_IwsAruEeiD0rFshnpKMQ" name="password" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_8_JXwAruEeiD0rFshnpKMQ" name="getPassword" visibility="public">
+                <ownedParameter xmi:id="_8_JXwQruEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_8_J-0AruEeiD0rFshnpKMQ" name="setPassword" visibility="public">
+                <ownedParameter xmi:id="_8_J-0QruEeiD0rFshnpKMQ" name="password">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_8_Kl4AruEeiD0rFshnpKMQ" name="doEncrypt" visibility="public" isAbstract="true">
+                <ownedParameter xmi:id="_8_Kl4QruEeiD0rFshnpKMQ" name="key">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_8_Kl4gruEeiD0rFshnpKMQ" name="ps">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_8_Kl4wruEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_8-bmEAruEeiD0rFshnpKMQ" name="Client" clientDependency="_JBfvUArvEeiD0rFshnpKMQ">
+              <ownedOperation xmi:id="_8_L0AAruEeiD0rFshnpKMQ" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_8_L0AQruEeiD0rFshnpKMQ" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_L0AgruEeiD0rFshnpKMQ" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8_L0AwruEeiD0rFshnpKMQ"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_8-cNIAruEeiD0rFshnpKMQ" name="Caesar">
+              <ownedComment xmi:id="_8-c0MAruEeiD0rFshnpKMQ">
+                <body>/** 
+ * @author ctc适配者类，数据加密
+ */
+</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_8_MbEAruEeiD0rFshnpKMQ" name="doEncript" visibility="public">
+                <ownedParameter xmi:id="_8_MbEQruEeiD0rFshnpKMQ" name="key">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_8_MbEgruEeiD0rFshnpKMQ" name="ps">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_8_MbEwruEeiD0rFshnpKMQ" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_8_9QEAruEeiD0rFshnpKMQ" memberEnd="_8-6HMAruEeiD0rFshnpKMQ _8_9QEQruEeiD0rFshnpKMQ">
+              <ownedEnd xmi:id="_8_9QEQruEeiD0rFshnpKMQ" name="CipherAdapter" type="_8-ZJ1AruEeiD0rFshnpKMQ" association="_8_9QEAruEeiD0rFshnpKMQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_A7vwMArvEeiD0rFshnpKMQ" name="A_&lt;cipherAdapter>_&lt;caesar>" memberEnd="_A7vwMQrvEeiD0rFshnpKMQ _A7vwNArvEeiD0rFshnpKMQ">
+              <ownedEnd xmi:id="_A7vwMQrvEeiD0rFshnpKMQ" name="cipherAdapter" type="_8-ZJ1AruEeiD0rFshnpKMQ" association="_A7vwMArvEeiD0rFshnpKMQ">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A7vwMgrvEeiD0rFshnpKMQ" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7vwMwrvEeiD0rFshnpKMQ" value="1"/>
+              </ownedEnd>
+              <ownedEnd xmi:id="_A7vwNArvEeiD0rFshnpKMQ" name="caesar" type="_8-cNIAruEeiD0rFshnpKMQ" aggregation="composite" association="_A7vwMArvEeiD0rFshnpKMQ">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A7vwNQrvEeiD0rFshnpKMQ" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A7vwNgrvEeiD0rFshnpKMQ" value="1"/>
+              </ownedEnd>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_JBfvUArvEeiD0rFshnpKMQ" name="Dependency1" supplier="_8-aX8QruEeiD0rFshnpKMQ" client="_8-bmEAruEeiD0rFshnpKMQ"/>
+</uml:Model>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_VoxgYAvVEeijlupJGjMr5A">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_VpkxoAvVEeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_VplYsAvVEeijlupJGjMr5A">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_VoyHcAvVEeijlupJGjMr5A" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_VoyHcQvVEeijlupJGjMr5A" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_VoyHcgvVEeijlupJGjMr5A" name="behavioral">
+        <packagedElement xmi:type="uml:Package" xmi:id="_VoyHcwvVEeijlupJGjMr5A" name="interpreter">
+          <packagedElement xmi:type="uml:Class" xmi:id="_VoyHdAvVEeijlupJGjMr5A" name="Calculator">
+            <ownedAttribute xmi:id="_VpWvMAvVEeijlupJGjMr5A" name="node" visibility="private" type="_Vo0jsAvVEeijlupJGjMr5A" association="_Vqc7YAvVEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_VpkxoQvVEeijlupJGjMr5A" name="build" visibility="public">
+              <ownedParameter xmi:id="_VpkxogvVEeijlupJGjMr5A" name="statement">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_VplYsQvVEeijlupJGjMr5A" name="computer" visibility="public">
+              <ownedParameter xmi:id="_VplYsgvVEeijlupJGjMr5A" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_VoyugAvVEeijlupJGjMr5A" name="DivNode">
+            <generalization xmi:id="_Vpl_wAvVEeijlupJGjMr5A" general="_Voz8oQvVEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_Vpl_wQvVEeijlupJGjMr5A" name="intepret" visibility="public">
+              <ownedParameter xmi:id="_Vpl_wgvVEeijlupJGjMr5A" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_VozVkAvVEeijlupJGjMr5A" name="ValueNode" clientDependency="_Vpmm0AvVEeijlupJGjMr5A">
+            <ownedAttribute xmi:id="_Vpmm0QvVEeijlupJGjMr5A" name="value" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <interfaceRealization xmi:id="_Vpmm0AvVEeijlupJGjMr5A" name="Node" supplier="_Vo0jsAvVEeijlupJGjMr5A" client="_VozVkAvVEeijlupJGjMr5A" contract="_Vo0jsAvVEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_VpnN4AvVEeijlupJGjMr5A" name="intepret" visibility="public">
+              <ownedParameter xmi:id="_VpnN4QvVEeijlupJGjMr5A" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_VozVkQvVEeijlupJGjMr5A" name="Client" clientDependency="_pgDz4AvVEeijlupJGjMr5A">
+            <ownedOperation xmi:id="_Vpn08AvVEeijlupJGjMr5A" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_Vpn08QvVEeijlupJGjMr5A" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vpn08gvVEeijlupJGjMr5A" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vpn08wvVEeijlupJGjMr5A"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Voz8oAvVEeijlupJGjMr5A" name="ModNode">
+            <generalization xmi:id="_Vpn09AvVEeijlupJGjMr5A" general="_Voz8oQvVEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_VpocAAvVEeijlupJGjMr5A" name="intepret" visibility="public">
+              <ownedParameter xmi:id="_VpocAQvVEeijlupJGjMr5A" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Voz8oQvVEeijlupJGjMr5A" name="SymbolNode" clientDependency="_VppDEAvVEeijlupJGjMr5A" isAbstract="true">
+            <ownedAttribute xmi:id="_VppqIAvVEeijlupJGjMr5A" name="left" visibility="protected" type="_Vo0jsAvVEeijlupJGjMr5A" association="_VqdicAvVEeijlupJGjMr5A"/>
+            <ownedAttribute xmi:id="_VpqRMAvVEeijlupJGjMr5A" name="right" visibility="protected" type="_Vo0jsAvVEeijlupJGjMr5A" association="_VqdicgvVEeijlupJGjMr5A"/>
+            <interfaceRealization xmi:id="_VppDEAvVEeijlupJGjMr5A" name="Node" supplier="_Vo0jsAvVEeijlupJGjMr5A" client="_Voz8oQvVEeijlupJGjMr5A" contract="_Vo0jsAvVEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_Voz8ogvVEeijlupJGjMr5A" name="MulNode">
+            <generalization xmi:id="_VpqRMQvVEeijlupJGjMr5A" general="_Voz8oQvVEeijlupJGjMr5A"/>
+            <ownedOperation xmi:id="_VpqRMgvVEeijlupJGjMr5A" name="intepret" visibility="public">
+              <ownedParameter xmi:id="_VpqRMwvVEeijlupJGjMr5A" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_Vo0jsAvVEeijlupJGjMr5A" name="Node">
+            <ownedOperation xmi:id="_Vpq4QAvVEeijlupJGjMr5A" name="intepret" visibility="public">
+              <ownedParameter xmi:id="_Vpq4QQvVEeijlupJGjMr5A" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_Vqc7YAvVEeijlupJGjMr5A" memberEnd="_VpWvMAvVEeijlupJGjMr5A _Vqc7YQvVEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_Vqc7YQvVEeijlupJGjMr5A" name="Calculator" type="_VoyHdAvVEeijlupJGjMr5A" association="_Vqc7YAvVEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_VqdicAvVEeijlupJGjMr5A" memberEnd="_VppqIAvVEeijlupJGjMr5A _VqdicQvVEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_VqdicQvVEeijlupJGjMr5A" name="SymbolNode" type="_Voz8oQvVEeijlupJGjMr5A" association="_VqdicAvVEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_VqdicgvVEeijlupJGjMr5A" memberEnd="_VpqRMAvVEeijlupJGjMr5A _VqdicwvVEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_VqdicwvVEeijlupJGjMr5A" name="SymbolNode" type="_Voz8oQvVEeijlupJGjMr5A" association="_VqdicgvVEeijlupJGjMr5A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_kxkEcAvVEeijlupJGjMr5A" name="A_&lt;symbolNode>_&lt;node>" memberEnd="_kxkEcQvVEeijlupJGjMr5A _kxkEdAvVEeijlupJGjMr5A">
+            <ownedEnd xmi:id="_kxkEcQvVEeijlupJGjMr5A" name="symbolNode" type="_Voz8oQvVEeijlupJGjMr5A" association="_kxkEcAvVEeijlupJGjMr5A">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kxkEcgvVEeijlupJGjMr5A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kxkEcwvVEeijlupJGjMr5A" value="1"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_kxkEdAvVEeijlupJGjMr5A" name="node" type="_Vo0jsAvVEeijlupJGjMr5A" aggregation="shared" association="_kxkEcAvVEeijlupJGjMr5A">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kxkEdQvVEeijlupJGjMr5A" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kxkEdgvVEeijlupJGjMr5A" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_VpTE0AvVEeijlupJGjMr5A" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_VpTE0QvVEeijlupJGjMr5A" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_VpTE0gvVEeijlupJGjMr5A" name="Stack"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_pgDz4AvVEeijlupJGjMr5A" name="Dependency1" supplier="_VoyHdAvVEeijlupJGjMr5A" client="_VozVkQvVEeijlupJGjMr5A"/>
+</uml:Model>

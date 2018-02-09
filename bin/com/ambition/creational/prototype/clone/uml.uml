@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_DI18EAr-EeiD0rFshnpKMQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_DJ1akAr-EeiD0rFshnpKMQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_DI18EQr-EeiD0rFshnpKMQ" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_DI2jIAr-EeiD0rFshnpKMQ" name="ambition">
+      <packagedElement xmi:type="uml:Package" xmi:id="_DI2jIQr-EeiD0rFshnpKMQ" name="creational">
+        <packagedElement xmi:type="uml:Package" xmi:id="_DI2jIgr-EeiD0rFshnpKMQ" name="prototype">
+          <packagedElement xmi:type="uml:Package" xmi:id="_DI2jIwr-EeiD0rFshnpKMQ" name="clone">
+            <packagedElement xmi:type="uml:Class" xmi:id="_DI2jJAr-EeiD0rFshnpKMQ" name="Client" clientDependency="_kA3iAAr-EeiD0rFshnpKMQ">
+              <ownedOperation xmi:id="_DJ2BoAr-EeiD0rFshnpKMQ" name="main" visibility="public" isStatic="true">
+                <ownedParameter xmi:id="_DJ2BoQr-EeiD0rFshnpKMQ" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DJ2Bogr-EeiD0rFshnpKMQ" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DJ2Bowr-EeiD0rFshnpKMQ"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DI3xQAr-EeiD0rFshnpKMQ" name="Email" clientDependency="_ebsCMAr-EeiD0rFshnpKMQ">
+              <generalization xmi:id="_dk0roAr-EeiD0rFshnpKMQ" general="_P688oAr-EeiD0rFshnpKMQ"/>
+              <ownedAttribute xmi:id="_DJ320Ar-EeiD0rFshnpKMQ" name="attachment" visibility="private" type="_DI4_YAr-EeiD0rFshnpKMQ" association="_DKdFoAr-EeiD0rFshnpKMQ"/>
+              <interfaceRealization xmi:id="_ebsCMAr-EeiD0rFshnpKMQ" name="InterfaceRealization1" supplier="_WtfAYAr-EeiD0rFshnpKMQ" client="_DI3xQAr-EeiD0rFshnpKMQ" contract="_WtfAYAr-EeiD0rFshnpKMQ"/>
+              <ownedOperation xmi:id="_DJ4d4Qr-EeiD0rFshnpKMQ" name="clone" visibility="public">
+                <ownedParameter xmi:id="_DJ4d4gr-EeiD0rFshnpKMQ" name="return" type="_DJ4d4Ar-EeiD0rFshnpKMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DJ5E8Ar-EeiD0rFshnpKMQ" name="getAttachment" visibility="public">
+                <ownedParameter xmi:id="_DJ5sAAr-EeiD0rFshnpKMQ" name="return" type="_DI4_YAr-EeiD0rFshnpKMQ" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_DJ6TEAr-EeiD0rFshnpKMQ" name="display" visibility="public"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_DI4_YAr-EeiD0rFshnpKMQ" name="Attachment">
+              <ownedOperation xmi:id="_DJ66IAr-EeiD0rFshnpKMQ" name="download" visibility="public"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_DKdFoAr-EeiD0rFshnpKMQ" memberEnd="_DJ320Ar-EeiD0rFshnpKMQ _DKdFoQr-EeiD0rFshnpKMQ">
+              <ownedEnd xmi:id="_DKdFoQr-EeiD0rFshnpKMQ" name="Email" type="_DI3xQAr-EeiD0rFshnpKMQ" association="_DKdFoAr-EeiD0rFshnpKMQ"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_Ntu3IAr-EeiD0rFshnpKMQ" name="A_&lt;email>_&lt;attachment>" memberEnd="_Ntu3IQr-EeiD0rFshnpKMQ _Ntu3JAr-EeiD0rFshnpKMQ">
+              <ownedEnd xmi:id="_Ntu3IQr-EeiD0rFshnpKMQ" name="email" type="_DI3xQAr-EeiD0rFshnpKMQ" association="_Ntu3IAr-EeiD0rFshnpKMQ">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ntu3Igr-EeiD0rFshnpKMQ" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ntu3Iwr-EeiD0rFshnpKMQ" value="1"/>
+              </ownedEnd>
+              <ownedEnd xmi:id="_Ntu3JAr-EeiD0rFshnpKMQ" name="attachment" type="_DI4_YAr-EeiD0rFshnpKMQ" aggregation="composite" association="_Ntu3IAr-EeiD0rFshnpKMQ">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ntu3JQr-EeiD0rFshnpKMQ" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ntu3Jgr-EeiD0rFshnpKMQ" value="1"/>
+              </ownedEnd>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_P688oAr-EeiD0rFshnpKMQ" name="Object" classifierBehavior="_Tr3pgAr-EeiD0rFshnpKMQ">
+              <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Tr3pgAr-EeiD0rFshnpKMQ">
+                <region xmi:id="_Tr3pgQr-EeiD0rFshnpKMQ"/>
+              </ownedBehavior>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_WtfAYAr-EeiD0rFshnpKMQ" name="Cloneable"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_DJ4d4Ar-EeiD0rFshnpKMQ" name="Object"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_kA3iAAr-EeiD0rFshnpKMQ" name="Dependency1" supplier="_DI3xQAr-EeiD0rFshnpKMQ" client="_DI2jJAr-EeiD0rFshnpKMQ"/>
+</uml:Model>
