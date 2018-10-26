@@ -11,13 +11,14 @@
 > 大三开始接触设计模式是感觉好简单，就是几个类之间的关系应用
 > 到工作的时候才发现设计模式的用途，
 
-##creational 创建型模式
+## creational 创建型模式
 - AbstractFactory 抽象工厂模式
 - Builder 建造者模式
 - Factory 工厂方法模式
 - Prototype 原型模式
 - Singleton 单例模式
-##Structural 结构型模式
+
+## Structural 结构型模式
 - Adapter 适配器模式
 - Bridge 桥接模式
 - Composite 组合模式
@@ -25,7 +26,8 @@
 - Facade 外观模式
 - Flyweight 享元模式
 - Proxy 代理模式
-##Behavioral
+
+## Behavioral
 - Chain of Responsibility 责任链模式
 - Command 命令模式
 - Interpreter 解释器模式
