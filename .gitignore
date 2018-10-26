@@ -1,3 +1,8 @@
 /.idea
 /bin
 /.settings
+/.project
+/.reverse.properties
+/pattern.iml
+/README.md.bak
+/.classpath
